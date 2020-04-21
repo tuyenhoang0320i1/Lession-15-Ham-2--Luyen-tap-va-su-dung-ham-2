@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9: </title>
+</head>
+<body>
+<script>
+    function checkCharacterInString(str, c) {
+
+        for (let i = 0; i < str.length; i++) {
+            if (c == str[i]) {
+                return true;
+            } else {
+                return -1;
+            }
+        }
+    }
+
+    function countCharacter (str, c) {
+        let count = 0;
+        for (let i = 0; i < string.length; i++) {
+            if (c = str[i]) {
+                count++;
+            }
+        }
+        alert(c + " appear " + count);
+    }
+    let string = prompt("Enter a string: ");
+    let character = prompt(" Enter a character: ");
+
+    if (true) {
+        alert(character + " is available in string")
+    } else {
+        alert(-1);
+    }
+    checkCharacterInString(string, character);
+    countCharacter(string, character);
+</script>
+</body>
+</html>

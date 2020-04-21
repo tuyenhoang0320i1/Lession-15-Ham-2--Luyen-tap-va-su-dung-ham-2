@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: Tính giai thừa của một số nguyên</title>
+</head>
+<body>
+<script>
+    function calculateFactorial(N) {
+        debugger
+        let factor = 1;
+        for (i = 1; i <= N; i++) {
+            factor = factor * i;
+        }
+        return factor;
+    }
+
+    let number = +prompt("Enter a number: ");
+    alert("Factorial of " + number + " is: " + calculateFactorial(number));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Hàm tính diện tích, chu vi hình tròn</title>
+</head>
+<body>
+<p>Area of circle is: <span id="resultA"></span></p>
+<p>Circumference of circle is: <span id="resultR"></span></p>
+<script>
+    function calculatorAreaCircle(a) {
+        area = a * a;
+        return area;
+
+    }
+
+    function calculatorCircumferenceCircle(r) {
+        radius = 3.14 * (r * 2);
+        return radius;
+    }
+
+    let sideA = +prompt(" Enter side a (cm2): ");
+    calculatorAreaCircle(sideA);
+    document.getElementById('resultA').innerHTML = area + " cm2";
+
+    let circumference = +prompt("Enter redius (cm): ");
+    calculatorCircumferenceCircle(circumference);
+    document.getElementById('resultR').innerHTML = radius + " cm";
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6: Kiểm tra số đưa vào có phải là số nguyen dương không?</title>
+</head>
+<body>
+<script>
+    function checkPositiveNumber(N) {
+
+        if (N < 0 || N == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    let number = +prompt("Enter a number: ");
+    checkPositiveNumber(number);
+    if (checkPositiveNumber(number)) {
+        alert(number + " is a  Positive Number");
+    } else {
+        alert(number + " is not a Positive Number");
+    }
+
+</script>
+</body>
+</html>

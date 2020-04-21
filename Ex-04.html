@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4: Hàm kiểm tra ký tự nhập vào</title>
+</head>
+<body>
+<script>
+    function checkCharacterNumber(str1) {
+        if (isNaN(str1)) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+    let str = +prompt("Enter a string: ");
+    alert(checkCharacterNumber(str));
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baif 7: Hàm đổi chỗ 2 số nguyên</title>
+</head>
+<body>
+<script>
+    function main() {
+        array.push(num1);
+        array.push(num2);
+        document.write("Two number added is: num1 = " + array[0] + " and num2 = " + array[1] + "</br>");
+        document.write("Two number then  change added is: num1 = " + array[0] + " and num2 = " + array[1] + "</br>");
+    }
+
+    function changeNumber(array) {
+        document.write("Two number added is: a = " + array[0] + " and b = " + array[1] + "</br>");
+        let temp = array[0];
+        array[0] = array[1];
+        array[1] = temp;
+        document.write("Two number then change added is: a = " + array[0] + " and b = " + array[1] + "</br>");
+    }
+    let num1 = +prompt("Enter number No. 1: ");
+    let num2 = +prompt("Enter number No. 2: ");
+    let array = new Array();
+    main();
+    changeNumber(array);
+</script>
+</body>
+</html>
